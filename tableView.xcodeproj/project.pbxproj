@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		32EA835F1F549FD200852FF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA835E1F549FD200852FF1 /* main.m */; };
 		32EA83621F549FD200852FF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA83611F549FD200852FF1 /* AppDelegate.m */; };
-		32EA83651F549FD200852FF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA83641F549FD200852FF1 /* ViewController.m */; };
 		32EA83681F549FD200852FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA83661F549FD200852FF1 /* Main.storyboard */; };
 		32EA836A1F549FD200852FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32EA83691F549FD200852FF1 /* Assets.xcassets */; };
 		32EA836D1F549FD200852FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA836B1F549FD200852FF1 /* LaunchScreen.storyboard */; };
+		32EA83761F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		32EA835E1F549FD200852FF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32EA83601F549FD200852FF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32EA83611F549FD200852FF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32EA83631F549FD200852FF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32EA83641F549FD200852FF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32EA83671F549FD200852FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32EA83691F549FD200852FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32EA836C1F549FD200852FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32EA836E1F549FD200852FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EA83741F54A1D000852FF1 /* OuterSpaceTVCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OuterSpaceTVCTableViewController.h; sourceTree = "<group>"; };
+		32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OuterSpaceTVCTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 			children = (
 				32EA83601F549FD200852FF1 /* AppDelegate.h */,
 				32EA83611F549FD200852FF1 /* AppDelegate.m */,
-				32EA83631F549FD200852FF1 /* ViewController.h */,
-				32EA83641F549FD200852FF1 /* ViewController.m */,
 				32EA83661F549FD200852FF1 /* Main.storyboard */,
+				32EA83741F54A1D000852FF1 /* OuterSpaceTVCTableViewController.h */,
+				32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */,
 				32EA83691F549FD200852FF1 /* Assets.xcassets */,
 				32EA836B1F549FD200852FF1 /* LaunchScreen.storyboard */,
 				32EA836E1F549FD200852FF1 /* Info.plist */,
@@ -151,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32EA83651F549FD200852FF1 /* ViewController.m in Sources */,
 				32EA83621F549FD200852FF1 /* AppDelegate.m in Sources */,
+				32EA83761F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m in Sources */,
 				32EA835F1F549FD200852FF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
