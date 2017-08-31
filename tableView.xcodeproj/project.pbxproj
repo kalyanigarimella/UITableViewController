@@ -12,7 +12,7 @@
 		32EA83681F549FD200852FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA83661F549FD200852FF1 /* Main.storyboard */; };
 		32EA836A1F549FD200852FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32EA83691F549FD200852FF1 /* Assets.xcassets */; };
 		32EA836D1F549FD200852FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA836B1F549FD200852FF1 /* LaunchScreen.storyboard */; };
-		32EA83761F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */; };
+		32EA83791F57EFC800852FF1 /* TVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA83781F57EFC800852FF1 /* TVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		32EA83691F549FD200852FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32EA836C1F549FD200852FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32EA836E1F549FD200852FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32EA83741F54A1D000852FF1 /* OuterSpaceTVCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OuterSpaceTVCTableViewController.h; sourceTree = "<group>"; };
-		32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OuterSpaceTVCTableViewController.m; sourceTree = "<group>"; };
+		32EA83771F57EFC800852FF1 /* TVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVC.h; path = ../TVC.h; sourceTree = "<group>"; };
+		32EA83781F57EFC800852FF1 /* TVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVC.m; path = ../TVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				32EA83601F549FD200852FF1 /* AppDelegate.h */,
 				32EA83611F549FD200852FF1 /* AppDelegate.m */,
 				32EA83661F549FD200852FF1 /* Main.storyboard */,
-				32EA83741F54A1D000852FF1 /* OuterSpaceTVCTableViewController.h */,
-				32EA83751F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m */,
+				32EA83771F57EFC800852FF1 /* TVC.h */,
+				32EA83781F57EFC800852FF1 /* TVC.m */,
 				32EA83691F549FD200852FF1 /* Assets.xcassets */,
 				32EA836B1F549FD200852FF1 /* LaunchScreen.storyboard */,
 				32EA836E1F549FD200852FF1 /* Info.plist */,
@@ -151,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA83791F57EFC800852FF1 /* TVC.m in Sources */,
 				32EA83621F549FD200852FF1 /* AppDelegate.m in Sources */,
-				32EA83761F54A1D000852FF1 /* OuterSpaceTVCTableViewController.m in Sources */,
 				32EA835F1F549FD200852FF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

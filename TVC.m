@@ -1,37 +1,27 @@
 //
-//  OuterSpaceTVCTableViewController.m
+//  TVC.m
 //  tableView
 //
-//  Created by Kalyani on 29/08/17.
+//  Created by Kalyani on 31/08/17.
 //  Copyright © 2017 kalyani. All rights reserved.
 //
 
-#import "OuterSpaceTVCTableViewController.h"
+#import "TVC.h"
 
-@interface OuterSpaceTVCTableViewController ()
+@interface TVC ()
 
 @end
 
-@implementation OuterSpaceTVCTableViewController
+@implementation TVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.rowsNames = [[NSMutableArray alloc] initWithObjects:@"first", @"Second", @"Third", @"Four", @"Five", nil];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-    NSMutableDictionary *myDict = [[NSMutableDictionary alloc]init];
-    
-    [myDict setObject:@"Red" forKey:@"Fire"];
-    [myDict setObject:@"Blue" forKey:@"Ocean"];
-    [myDict setObject:@"Yellow" forKey:@"Star"];
-    
-    NSLog(@"%@", myDict);
-    
-    NSString *myKey = [myDict objectForKey:@"Fire" ];
-    NSLog(@"%@" , myKey);
-    
-    
-    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,28 +33,37 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    if(section == 0)
-        return [self.rowsNames count];
-    else
+    if(section == 0){
+        return 2;
+    }
+    else if (section == 1) {
+        return 1;
+    }
+    else{
         return 3;
+    }
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-   cell.textLabel.text = [ self.rowsNames objectAtIndex: indexPath.row];
+    if(indexPath.section == 0){
+        cell.textLabel.text = @"I am in section 0";
+    }
+    else if (indexPath.section == 1){
+        cell.textLabel.text = @"section 1";
+    }
+    else {
+        cell.textLabel.text = [NSString stringWithFormat:@"Cell %li", (long)indexPath.row];
+    }
     
-    if (indexPath.section == 0)
-        cell.backgroundColor = [UIColor redColor];
-    else
-        cell.backgroundColor = [UIColor yellowColor];
+    
     return cell;
 }
 
